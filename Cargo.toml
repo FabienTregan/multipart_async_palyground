@@ -1,0 +1,20 @@
+[package]
+name = "baku-gazō"
+version = "0.1.0"
+authors = ["Fabien Tregan <treguy@free.fr>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+multipart-async =  { git = "https://github.com/abonander/multipart-async.git", branch = "master"}
+futures-preview = "0.3.0-alpha.19"
+futures-util-preview = "0.3.0-alpha.19"
+tokio = "0.2.0-alpha.6"
+httparse = "1.3.4"
+bytes = "0.4"
+
+[dependencies.hyper]
+git = "https://github.com/hyperium/hyper"
+branch = "master"
+features = ["unstable-stream"]
